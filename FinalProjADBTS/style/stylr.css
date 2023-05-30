@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+#moon {
+  position: absolute;
+  right: 2.5%;
+  top: 2.5%;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: transparent;
+  transition: 0.2s;
+}
+#moon:hover {
+  background-color: rgba(128, 128, 128, 0.422);
+}
+
+.nav > hr {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  height: 100vh;
+  box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.12);
+  flex-direction: column;
+  width: 17vw;
+  height: 100vh;
+  position: relative;
+  z-index: 99999;
+  text-align: center;
+}
+
+.nav > .logo-div {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > .logo-div > img {
+  height: 25%;
+}
+.nav > .logo-div > h2 {
+  font-size: 1.2rem;
+}
+
+.nav > .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 30px 0px;
+  margin-top: 20px;
+}
+
+.navigation > li {
+  width: 90%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.navigation > li:hover {
+  background-color: #0057ff;
+}
+
+.navigation > li:hover a h2 {
+  color: white;
+}
+.navigation > li:hover a span {
+  color: white;
+}
+
+.navigation > li > a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigation > li > a > h2 {
+  color: black;
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+.navigation > li > a > span {
+  color: black;
+}
+.navigation > li > a > .active {
+  color: white;
+}
+.navigation > .bg {
+  transition: 0.2s;
+  background-color: #0057ff;
+}
+.navigation > .bg:hover {
+  background-color: #141dd1;
+}
+.nav footer {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+
+.nav footer h2 {
+  font-size: 1rem;
+}
+
+.main {
+  display: flex;
+  background: linear-gradient(
+    36deg,
+    rgba(126, 255, 183, 0.5214460784313726) 5%,
+    rgba(255, 255, 255, 0) 32%,
+    rgba(255, 225, 242, 0) 67%,
+    rgba(53, 195, 117, 0.28335084033613445) 98%
+  );
+  overflow: hidden;
+  width: 83vw;
+}
+
+.main > .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: transparent;
+  padding-left: 30px;
+}
+
+.main > .left > h1 {
+  font-size: 5rem;
+}
+
+.main > .left > p {
+  max-width: 100%;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.main > .left > .btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.main > .left > .btn > a:nth-child(1) {
+  background-color: #0057ff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 7px 30px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  transition: 0.2s;
+}
+
+.main > .left > .btn > a:nth-child(1):hover {
+  background-color: #141dd1;
+}
+
+.main > .left > .btn > a:nth-child(2) {
+  background-color: transparent;
+  margin-left: 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 7px 30px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid gray;
+  transition: 0.2s;
+  font-weight: 900;
+}
+.main > .left > .btn > a:nth-child(2):hover {
+  background-color: gray;
+  color: white;
+}
+
+.main > .rigth {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.main > .rigth > img {
+  width: 70%;
+  filter: drop-shadow(8px 5px 20px rgba(86, 76, 121, 0.254));
+}
+
+.main_log {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_log > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  width: 30%;
+}
+
+.main_log > form > span {
+  position: relative;
+}
+
+.main_log > form > span > label {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  transition: 0.2s;
+}
+.main_log > form > span {
+  width: 100%;
+}
+
+.main_log > form > span:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.main_log > form > span:nth-child(1) > img {
+  height: 50px;
+}
+
+.main_log > form > img {
+  height: 20px;
+}
+
+.main_log > form > span > input {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: 0.2s;
+  outline: none;
+}
+.main_log > form > span > input:focus {
+  border: 1px solid #141dd1;
+}
+
+.main_log > form > span > input:focus ~ label {
+  top: -50%;
+  transform: scale(0.9);
+  color: #141dd1;
+}
+
+.main_log > form > span > input:not(:placeholder-shown) {
+  border: 1px solid #141dd1;
+}
+
+.main_log > form > span > input:not(:placeholder-shown) ~ label {
+  top: -50%;
+  transform: scale(0.9);
+  color: #141dd1;
+}
+
+.main_log > form > input {
+  width: 100%;
+  background-color: #0057ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.main_log > form > input:hover {
+  background-color: #141dd1;
+}
+
+.main_log > form > span:nth-child(3) > span {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  cursor: pointer;
+}
+
+.main_sign {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_sign > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 30%;
+}
+
+.main_sign > form > span {
+  position: relative;
+}
+
+.main_sign > form > span > label {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  transition: 0.2s;
+}
+.main_sign > form > span {
+  width: 100%;
+}
+
+.main_sign > form > span:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.main_sign > form > span:nth-child(1) > img {
+  height: 50px;
+}
+
+.main_sign > form > img {
+  height: 20px;
+}
+
+.main_sign > form > span > input {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: 0.2s;
+  outline: none;
+}
+.main_sign > form > span > input:focus {
+  border: 1px solid #141dd1;
+}
+
+.main_sign > form > span > input:focus ~ label {
+  top: -50%;
+  transform: scale(0.9);
+  color: #141dd1;
+}
+
+.main_sign > form > span > input:not(:placeholder-shown) {
+  border: 1px solid #141dd1;
+}
+
+.main_sign > form > span > input:not(:placeholder-shown) ~ label {
+  top: -50%;
+  transform: scale(0.9);
+  color: #141dd1;
+}
+
+.main_sign > form > input {
+  width: 100%;
+  background-color: #0057ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.main_sign > form > input:hover {
+  background-color: #141dd1;
+}
+
+.main_sign > form > span:nth-child(4) > span {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  cursor: pointer;
+}
+
+.main_note {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_note > .up {
+  height: 30%;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main_note > .up > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main_note > .up > span > span {
+  font-size: 2.5rem;
+  color: #141dd1;
+}
+.main_note > .up > span > h1 {
+  font-size: 2.5rem;
+}
+
+.main_note > .up > span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_note > .up > span > a {
+  background-color: #141dd1;
+  font-size: 1rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.main_note > .up > span > a::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: -45%;
+  height: 100%;
+  width: 40%;
+  background-color: #141dd1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_note > .up > span > a:hover {
+  background-color: #0d14a5;
+}
+
+.main_note > .up > span > a:hover::after {
+  background-color: #0d14a5;
+  transform: rotate(360deg);
+}
+
+.main_note > .container_notes {
+  height: 70%;
+  width: 90%;
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 10px;
+  box-shadow: 0px -1px 1px rgba(128, 128, 128, 0.581);
+}
+
+.main_note > .container_notes > div {
+  height: 30%;
+  width: 30%;
+  min-width: 305px;
+  list-style: none;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main_note > .container_notes > div > span > img {
+  position: absolute;
+  height: 15px;
+  top: 5%;
+  left: 5%;
+}
+.main_note > .container_notes > div > span:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.main_note > .container_notes > div > span:nth-child(1) > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 2px;
+  color: gray;
+  font-size: 0.7rem;
+  transition: 0.2s;
+  top: 5%;
+  right: 5%;
+  position: absolute;
+}
+
+.main_note > .container_notes > div > span:nth-child(1) > h1 {
+  font-size: 1.7rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_note > .container_notes > div > span:nth-child(1) > a:hover {
+  color: #0d14a5;
+}
+
+.main_note > .container_notes > div > span:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_note > .container_notes > div > span:nth-child(2) > a:nth-child(1) {
+  border: 1px solid gray;
+  text-decoration: none;
+  padding: 0px 5px;
+  border-radius: 7px;
+  color: gray;
+  transition: 0.2s;
+}
+.main_note > .container_notes > div > span:nth-child(2) > a:nth-child(1):hover {
+  border: 1px solid green;
+  color: green;
+}
+
+.main_note > .container_notes > div > span:nth-child(2) > a:nth-child(2) {
+  border: 1px solid red;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2px;
+  border-radius: 7px;
+  color: red;
+  transition: 0.2s;
+}
+
+.main_note > .container_notes > div > span:nth-child(2) > a:nth-child(2):hover {
+  background-color: red;
+  color: white;
+}
+
+.main_note_view {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_note_view > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.main_note_view > form > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 15%;
+}
+.main_note_view > form > span > h1 {
+  width: 100%;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.main_note_view > form > span > a {
+  text-decoration: none;
+}
+.main_note_view > form > span > a > span {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+.main_note_view > form > span > .sub {
+  text-decoration: none;
+  background-color: #0057ff;
+  color: white;
+  font-weight: 900;
+  padding: 7px 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.main_note_view > form > span > .sub:hover {
+  background-color: #0d14a5;
+}
+.main_note_view > form > span > h1 > img {
+  height: 50px;
+}
+
+.main_note_view > form > textarea {
+  height: 70%;
+  width: 90%;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  padding: 40px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.main_note_add {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.main_note_add > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.main_note_add > form > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.main_note_add > form > input {
+  outline: none;
+  border: 1px solid gray;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 50%;
+  font-size: 1.2rem;
+  background-color: rgb(245, 245, 245);
+}
+.main_note_add > form > span > h1 {
+  width: 100%;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.main_note_add > form > span > a {
+  text-decoration: none;
+  background-color: #0057ff;
+  color: white;
+  font-weight: 900;
+  padding: 7px 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.main_note_add > form > span > a:hover {
+  background-color: #0d14a5;
+}
+.main_note_add > form > span > h1 > img {
+  height: 50px;
+}
+
+.main_note_add > form > textarea {
+  height: 65%;
+  width: 90%;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  padding: 40px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.main_note_add > form > .subsub {
+  background-color: #0057ff;
+  color: white;
+  width: 25%;
+  cursor: pointer;
+}
+.main_note_add > form > a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
